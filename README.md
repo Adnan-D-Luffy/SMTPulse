@@ -80,7 +80,7 @@ The server starts on [http://localhost:3000](http://localhost:3000). Thanks to N
 
 ### Sending an Email
 
-1. Ensure your SMTP credentials are set in `.env`.
+1. Ensure your SMTP credentials are set in .
 2. Use the provided API endpoint or form to enter:
    - **Recipient Email**
    - **Subject**
