@@ -135,3 +135,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 **SMTPulse: Sending emails with a pulse. Coming soon to the web! 📧**
+lastly 
+Hehe ! The left side works fine just you won't get any history in the right side ... gonna fix it soon and make it more stylish 
+<img width="1366" height="698" alt="Screenshot From 2025-08-05 06-52-31" src="https://github.com/user-attachments/assets/067e1506-fc8c-4dc6-b550-d6f183653247" />
+
