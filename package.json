@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.5",
+    "nodemon": "^3.1.10"
+  },
+  "scripts": {
+    "server":"node backend/app.js",
+    "dev":"npx nodemon backend/app.js"
+  }
+}

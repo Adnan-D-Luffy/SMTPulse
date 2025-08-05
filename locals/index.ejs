@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS - A SMTP Mail Sender</title>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+    <main>
+        <div class="box1">
+            <div>
+                <p class="title">SMS</p>
+                <p>Simple Message Server</p>
+            </div>
+            <div class="container">
+                <form>
+                <div class="fs">
+                    <div>
+                           <p>Host</p>
+                    <input required  class="host" type="text" placeholder="smtp.gmail.com" name="host">
+                
+                    </div>
+                    <div>
+                                            <p>Port</p>
+                    <input required type="number" class="port" placeholder="465" name="port">
+            
+                    </div>
+     </div>
+                <div class="ss">
+                    <div>
+                        <p>User</p>
+                    <input required type="email" class="user" placeholder="adnan@gmail.com" name="user">
+                    
+                    </div>
+                    <div>
+                          <p>Password</p>
+                    <input required type="text" class="pass" placeholder="Your App Pass" name="pass">
+             
+                    </div>
+                     </div>
+                <div class="info">
+                    <div>
+                            <p>From</p>
+                    <input required type="email" class="from" placeholder="info@gmail.com" name="from">
+                 
+                    </div>
+                    <div>
+                         <p>to</p>
+                    <input required type="email" class="to" placeholder="reciever mail" name="to">
+                  
+                    </div>
+                    
+                </div>
+                <div>
+                    <p>subject</p>
+                    <input required type="text" class="sub" value="Hey There ! Check this out" name="subject">
+                    <p>mail body</p>
+                    <textarea required class="txt" name="body" ><p>This mail is sent from Simple Mail Server </p>
+                    </textarea>
+                </div>
+                
+                <button>Submit</button>
+                </form>
+                
+
+            </div>
+        </div>
+        <div class="box2">
+                    <p>History</p>
+                    
+                    <div class="history-box">
+                        
+                        <div class="his-box">
+                            <p style="margin-left: 10px;">Message Info</p>
+                            <p>Code</p>
+                            <p style="margin-right: 20px;">Reciever</p>
+                        </div>
+                        <div class="his-product">
+                           
+                        </div>
+                    </div>
+            
+        </div>
+    </main>
+
+    <script type="module" src="./js/fetch.js"></script>
+   
+</body>
+</html>
