@@ -1,6 +1,10 @@
+export let memory = JSON.parse(localStorage.getItem("mem"))||[{
+            id : "4378info@mail.com",
+            Code:200,
+            re:"hismail@mail.com",
+        }];
 
-let mem =  JSON.parse(localStorage.getItem("model")) ;
-
+import { Loader } from "./ls.js";
 const form = document.querySelector("form")
 const endpoint = "/api/sent"
 
@@ -27,33 +31,35 @@ form.addEventListener("submit",async (e)=>{
         body:JSON.stringify(body),
     })
     .then(response=>response.json())
-    .then(info=>{
-        const ID = info.messageId;
-        let code = 0;
-        
-            if (info.accepted.length === 1) {
-                code = 200
-            }
-
-            else {
-                code = 404
-            }
+    .then(info=>{   
        
+        let code = 0;
+        if (info === "Error") {
+            code = 404;  
+             memory.push({
+            id : info.message,
+            Code:code,
+            re:"Ulubulu",
+        });
+       localStorage.setItem("mem",JSON.stringify(memory));  
+        }
+        else {
+            code = 200;
+        const ID = info.messageId;
         const env = info.envelope.to[0];
-        const model = {
+       memory.push({
             id :ID,
             Code:code,
             re:env,
-        }
-        mem.push(model);
-        localStorage.setItem("model",JSON.stringify(mem));
+        });
+       localStorage.setItem("mem",JSON.stringify(memory));
         
-    })
+}})
     .catch(err=>{
         console.log(err)
     })
     .finally(()=>{
-        console.log(mem);
+        Loader();
     })
 
 })
@@ -67,11 +73,7 @@ function AluChecker () {
     }
 }
 
-// //<div class="profile" >
-//                                 <div class="del">
-//                                     <button data-his="${i}">X</button>
-//                                 </div>
-//                                 <p class="id" style="margin-left: 10px;">${value.id}</p>
-//                                 <p class="code">${value.Code}</p>
-//                                 <p style="margin-right: 20px;">${value.re}</p>
-//                             </div
+export const setItem = (id) =>{
+    memory.splice(id,1);
+    localStorage.setItem("mem",JSON.stringify(memory))
+}

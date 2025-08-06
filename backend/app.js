@@ -41,10 +41,8 @@ app.post("/api/sent",(req,res)=>{
    }
    transport.sendMail(mailOptions,(err,info)=>{
     if(err){
-        console.log(err);
-        res.json(err);
+        res.json(err.name);
     }
-    console.log(info);
     res.json(info);
    })
 })
