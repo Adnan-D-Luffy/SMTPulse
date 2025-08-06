@@ -1,140 +1,84 @@
-# SMTPulse 🚀
+# SMTPulse
 
-SMTPulse is a dynamic Node.js application that lets you send emails seamlessly using SMTP with secure credential authentication. Designed for developers and automation enthusiasts, SMTPulse combines simplicity, performance, and security, making it perfect for automating notifications or sending personalized emails.
+[Live Site](https://smtpulse.adnandluffy.site/)
 
-> **Note:** This project is actively under development! Online hosting and new features are coming soon—stay tuned! 🌐
-
----
-
-## ✨ Features
-
-- **Secure Email Sending:** Send emails through any SMTP provider with user-supplied credentials.
-- **Lightweight & Fast:** Built on Express for high performance and minimal resource usage.
-- **Developer-Friendly:** Quick setup and intuitive commands—just `npm install` and `npm run server`.
-- **Local Hosting:** Runs on [localhost:3000](http://localhost:3000) for rapid development and testing.
-- **Scalable Foundation:** Engineered for easy future deployment to the web.
-- **Robust Email Handling:** Powered by [Nodemailer](https://nodemailer.com/) for reliable SMTP delivery.
+SMTPulse is a web application for sending emails via SMTP, built with Node.js and powered by Nodemailer. It provides a simple and user-friendly interface to send emails quickly and securely with your own SMTP credentials.
 
 ---
 
-## 🛠️ Tech Stack
-
-- [Node.js](https://nodejs.org/): JavaScript runtime for server-side logic.
-- [Express](https://expressjs.com/): Minimalist framework for handling HTTP requests.
-- [Nodemailer](https://nodemailer.com/): Industry-standard for sending emails in Node.js.
-- [Nodemon](https://nodemon.io/): Live server reloading during development.
+> **🚨 Disclaimer:**  
+> SMTPulse is intended for legitimate, lawful use only. We do **not** take responsibility—directly or indirectly—for any misuse, including but not limited to sending spam, phishing, unsolicited, or malicious emails. By using this tool, you agree that you are solely responsible for your actions and compliance with relevant laws and regulations.
 
 ---
 
-## 🚀 Installation
+## Features
 
-Get SMTPulse up and running in minutes!
+- Send emails using any SMTP server
+- Simple, intuitive web-based UI
+- Built with Node.js and Nodemailer
+- Fast, reliable, and easy to use
+- Open source and ready for contributions
 
-### 1. Clone the Repository
+## Tech Stack
 
-```bash
-git clone <repository-url>
-cd smtpulse
-```
+- **Backend:** Node.js
+- **Email Handling:** Nodemailer
+- **License:** GNU General Public License v3.0
 
-### 2. Install Dependencies
+## 🚀 Quick Start
 
-```bash
-npm install
-```
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/Adnan-D-Luffy/SMTPulse.git
+   cd SMTPulse
+   ```
 
-This will install all necessary packages, including Express and Nodemailer.
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-### 3. Configure SMTP Credentials
+3. **Configure SMTP Settings**
+   - Update your SMTP credentials and configuration in the environment file or as prompted by the app.
 
- Get you SMTP Credentials and port number for the site . 
+4. **Start the Application**
+   ```bash
+   npm start server
+   ```
+   The app will run locally. For production, see deployment notes.
 
-    ```
-    smtp.gmail.com
-    port=465
-    user=your-email@example.com
-    pass=your-password
-    ```
-**Note** 
-- If the website provide 2FA than turn it on
-- And Apply for the App pass (From Gmail and Zoho or other platforms that block req from direct pass
+## 🌐 Live Demo
 
+[![Live Demo](https://img.shields.io/badge/Check%20Live%20Site-Running-brightgreen?style=for-the-badge&logo=vercel)](https://smtpulse.adnandluffy.site/)
 
-### 4. Run the Server
+## 💡 Contributing
 
-```bash
-npm run server
-```
+Contributions, issues and feature requests are welcome!  
+Want to help? Here’s how:
 
-The server starts on [http://localhost:3000](http://localhost:3000). Thanks to Nodemon, changes to your code trigger automatic restarts for a smooth workflow.
+- **Fork** this repo (top right corner of this page)
+- **Star** ⭐ the repo to support the project
+- **Create a branch:** `git checkout -b feature/your-feature`
+- **Commit your changes:** `git commit -am 'Add some feature'`
+- **Push to the branch:** `git push origin feature/your-feature`
+- **Create a Pull Request**
 
----
+Your contributions help make SMTPulse better! Check out the [issues](https://github.com/Adnan-D-Luffy/SMTPulse/issues) or open a discussion.
 
-## 📦 Usage
+## 👥 Contributors
 
-### Access the Application
+Thanks go to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
-- Open your browser or an API client (like Postman).
-- Navigate to [http://localhost:3000](http://localhost:3000).
-- Use available API endpoints or UI (if implemented) to send emails.
+<!-- ALL-CONTRIBUTORS-LIST:START -->
+- [@Adnan-D-Luffy](https://github.com/Adnan-D-Luffy) - creator & maintainer
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
-### Sending an Email
-
-1. Ensure your SMTP credentials are set in .
-2. Use the provided API endpoint or form to enter:
-   - **Recipient Email**
-   - **Subject**
-   - **Message Body**
-
-> **API documentation is coming soon as the project evolves!**
-
----
-
-## 🚧 Project Status & Roadmap
-
-SMTPulse is in active development. Upcoming enhancements include:
-
-- **Online Deployment:** Public access via the web.
-- **Email Templates:** Support for reusable designs.
-- **Bulk Sending:** Efficiently send to multiple recipients.
-- **OAuth2 Support:** Advanced security for SMTP authentication.
-- **Web Interface:** User-friendly frontend for all email operations.
-
----
-
-## 🤝 Contributing
-
-We welcome your contributions to make SMTPulse even better!
-
-1. **Fork** the repository.
-2. **Create** a new branch:  
-   `git checkout -b feature/your-feature`
-3. **Commit** your changes:  
-   `git commit -m "Add your feature"`
-4. **Push** to your branch:  
-   `git push origin feature/your-feature`
-5. **Open a Pull Request**
-
-Please follow the project's code standards and include relevant tests.
-
----
+Want to see your name here? [Fork](https://github.com/Adnan-D-Luffy/SMTPulse/fork) & [contribute](https://github.com/Adnan-D-Luffy/SMTPulse/pulls)!
 
 ## 📄 License
 
-This project is licensed under the GNU3.0 License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU General Public License v3.0.
 
 ---
 
-## 📬 Contact
-
-- **Questions or Feedback?**  
-  Open an issue on [GitHub Issues](../../issues)
-- **Stay Tuned:**  
-  Watch this repo for updates on our online deployment!
-
----
-
-**SMTPulse: Sending emails with a pulse. Coming soon to the web! 📧**
-lastly ! The Style May Not Be great ! I will redesign it latter .. But if you want why not contribute
-<img width="1366" height="698" alt="Screenshot From 2025-08-05 06-52-31" src="https://github.com/user-attachments/assets/067e1506-fc8c-4dc6-b550-d6f183653247" />
-
+**Keywords:** email, email-sender, node, nodejs, nodemailer, smtp, webapp
