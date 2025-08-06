@@ -3,6 +3,7 @@ const app = express();
 const nodemailer = require("nodemailer");
 const ejs = require("ejs");
 const path = require("path");
+const morgan = require("morgan")
 const port = 8080;
 app.listen(port,"0.0.0.0",err=>{
     if(err){
@@ -17,7 +18,7 @@ app.set('view engine','ejs');
 app.set('views',path.join(__dirname,"../locals"))
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
-
+app.use(morgan("dev"))
 app.get("/",(req,res)=>{
     res.render("index");
 })
