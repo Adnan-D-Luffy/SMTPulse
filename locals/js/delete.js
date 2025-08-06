@@ -1,5 +1,5 @@
 import { setItem } from "./fetch.js";
-import { Loader } from "./ls.js";
+import { Loader } from "./fetch.js";
 const del = document.querySelectorAll(".delete");
 
 del.forEach(KEY =>{
