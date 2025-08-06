@@ -1,8 +1,4 @@
-export let memory = JSON.parse(localStorage.getItem("mem"))||[{
-            id : "4378info@mail.com",
-            Code:200,
-            re:"hismail@mail.com",
-        }];
+export let memory = JSON.parse(localStorage.getItem("mem"))||[];
   let html = ""; 
 const form = document.querySelector("form")
 const endpoint = "/api/sent"
