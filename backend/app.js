@@ -3,8 +3,8 @@ const app = express();
 const nodemailer = require("nodemailer");
 const ejs = require("ejs");
 const path = require("path");
-const port = 3000;
-app.listen(port,err=>{
+const port = 8080;
+app.listen(port,"0.0.0.0",err=>{
     if(err){
         console.log(err)
     }
