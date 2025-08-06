@@ -4,7 +4,6 @@ export let memory = JSON.parse(localStorage.getItem("mem"))||[{
             re:"hismail@mail.com",
         }];
 
-import { Loader } from "./ls.js";
 const form = document.querySelector("form")
 const endpoint = "/api/sent"
 
