@@ -82,12 +82,12 @@ export function Loader () {
    if (memory.length > 0 ) {
     memory.forEach((value,i) => {
           html += `<div class="profile" >
-                                <div class="del">
-                                    <button class="delete" data-his="${i}">X</button>
-                                </div>
                                 <p class="id" style="margin-left: 10px;">${value.id}</p>
                                 <p class="code">${value.Code}</p>
                                 <p style="margin-right: 20px;">${value.re}</p>
+                                <div class="del">
+                                    <button class="delete" data-his="${i}"><i class="fa-solid fa-trash"></i></button>
+                                </div>
                             </div>`
     });
   
